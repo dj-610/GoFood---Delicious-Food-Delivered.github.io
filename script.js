@@ -1,7 +1,7 @@
 // Define an array of image sources
 const imageSources = [
-    '/images/Alferdo Pasta',
-    '/images/flaming wings',
+    '/images/Alferdo Pasta.jpg',
+    '/images/flaming wings.pg',
     '/images/Oven baked wings.webp',
 ];
 
@@ -22,10 +22,21 @@ const intervalId = setInterval(updateModalImage, 3000);
 
 // Function to stop the interval when the modal is closed
 function closeModal() {
+    var modal = document.getElementById("cartModal");
+    modal.style.display = "none";
+
     clearInterval(intervalId);
     // Add the rest of your closeModal logic here
 }
-
+window.onclick = function (event) {
+    var modal = document.getElementById("cartModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+        
+        // Stop the interval when the modal is closed
+        clearInterval(intervalId);
+    }
+}
 // Call updateModalImage initially to set the first image
 updateModalImage();
 
