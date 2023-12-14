@@ -1,8 +1,8 @@
 // Define an array of image sources
 const imageSources = [
-    '/images/Alferdo Pasta.jpg',
-    '/images/flaming wings.pg',
-    '/images/Oven baked wings.webp',
+    'images/Alferdo Pasta.jpg',
+    'images/flaming wings.pg',
+    'images/Oven baked wings.webp',
 ];
 
 let currentIndex = 0;
