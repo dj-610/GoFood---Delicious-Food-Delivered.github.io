@@ -1,6 +1,6 @@
 // Define an array of image sources
 const imageSources = [
-    'images/Alferdo Pasta',
+    'images/dessert-selection.jpg',
     'images/flaming wings',
     'images/Oven baked wings.webp',
 ];
